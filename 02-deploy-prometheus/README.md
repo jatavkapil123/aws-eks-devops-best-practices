@@ -19,6 +19,10 @@ If you are looking for a fully managed prometheus offering then please refer to 
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 ```
+Commands 
+kubectl create namespace prometheus
+kubectl apply -f prometheus-deployment.yaml -n prometheus
+kubectl apply -f prometheus-service.yaml -n prometheus
 
 ## Install/Upgrade prometheus with default values 
 
